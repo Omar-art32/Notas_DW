@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título del Artículo</title>
+    <meta name="description" content="Descripción breve del artículo">
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace a tu archivo CSS externo -->
+</head>
+<body>
+
+<header>
+    <h1>Título del Artículo</h1>
+    <p>Autor: <strong>Nombre del Autor</strong></p>
+    <p>Fecha de publicación: <time datetime="2024-11-08">8 de noviembre, 2024</time></p>
+</header>
+
+<main>
+    <article>
+        <section>
+            <h2>Introducción</h2>
+            <p>Escribe una breve introducción aquí. Explica el propósito del artículo y por qué es relevante para los lectores.</p>
+        </section>
+
+        <section>
+            <h2>Desarrollo del Tema</h2>
+            <p>Aquí puedes comenzar a desarrollar el tema en detalle. Utiliza párrafos y subtítulos según sea necesario para organizar la información.</p>
+            <h3>Subtema o Punto Específico</h3>
+            <p>Desglose de un punto específico relacionado al tema.</p>
+        </section>
+
+        <section>
+            <h2>Conclusión</h2>
+            <p>Ofrece un resumen de los puntos principales y una conclusión sobre el tema tratado en el artículo.</p>
+        </section>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2024 Nombre del Autor. Todos los derechos reservados.</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="sobre.html">Sobre el Autor</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>

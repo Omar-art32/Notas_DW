@@ -34,7 +34,7 @@
     <meta name="twitter:title" content="Examples HTML5">
     <meta name="twitter:description" content="Ejemplo de una página HTML5 con etiquetas meta. Aprende a estructurar tu HTML correctamente.">
     <meta name="twitter:image" content="http://127.0.0.1:5500/code/html/imgs/imagen.png">
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -109,6 +109,92 @@
                 </html>
                 </code></pre>
         </section>
+        <style>
+            .table_component {
+                overflow: auto;
+                width: 100%;
+            }
+            
+            .table_component table {
+                border: 1px solid #dededf;
+                height: 100%;
+                width: 100%;
+                table-layout: fixed;
+                border-collapse: collapse;
+                border-spacing: 1px;
+                text-align: left;
+            }
+            
+            .table_component caption {
+                caption-side: top;
+                text-align: left;
+            }
+            
+            .table_component th {
+                border: 1px solid #dededf;
+                background-color: #eceff1;
+                color: #000000;
+                padding: 5px;
+            }
+            
+            .table_component td {
+                border: 1px solid #dededf;
+                background-color: #ffffff;
+                color: #000000;
+                padding: 5px;
+            }
+            </style>
+            <div class="table_component" role="region" tabindex="0">
+            <table>
+                <caption>TABLA EJEMPLO</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><br></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+
+
+
+
+
+
+
+
+
+
+
+
 
         <section id="about">
             <h2>Acerca de Nosotros</h2>
@@ -127,3 +213,89 @@
 
 </body>
 </html>
+/*
+Para optimizar tu página HTML en cuanto a rendimiento, SEO, accesibilidad, y compatibilidad con dispositivos y navegadores, puedes añadir varias etiquetas <meta> y otras configuraciones dentro del <head>. Aquí te indico cuáles puedes agregar y su propósito.
+
+    1. Estructura del <head> con etiquetas <meta>
+    El código a continuación debe ir dentro de la etiqueta <head> de tu archivo HTML:
+    
+    html
+    Copiar código
+    <head>
+        <!-- Etiqueta meta para definir el conjunto de caracteres -->
+        <meta charset="UTF-8">
+        
+        <!-- Para control de la vista en dispositivos móviles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Título de la página -->
+        <title>Mi Página Futurista</title>
+        
+        <!-- Descripción de la página para motores de búsqueda -->
+        <meta name="description" content="Descripción breve de tu página para que los motores de búsqueda sepan de qué se trata. Máximo 160 caracteres.">
+        
+        <!-- Palabras clave de la página (SEO). Se usan menos actualmente, pero aún pueden ser útiles en casos específicos. -->
+        <meta name="keywords" content="futurista, HTML, CSS, diseño moderno, desarrollo web">
+        
+        <!-- Autor de la página -->
+        <meta name="author" content="Tu Nombre">
+        
+        <!-- Favicon (icono que aparece en la pestaña del navegador) -->
+        <link rel="icon" href="ruta/de/tu/favicon.ico" type="image/x-icon">
+        
+        <!-- Color del tema para la barra de navegación en dispositivos móviles -->
+        <meta name="theme-color" content="#1b1f27">
+        
+        <!-- Control de robots para SEO -->
+        <meta name="robots" content="index, follow"> <!-- Indexar y seguir los enlaces -->
+        
+        <!-- Open Graph para redes sociales (mejor visualización al compartir la página en redes) -->
+        <meta property="og:title" content="Mi Página Futurista">
+        <meta property="og:description" content="Descripción breve para redes sociales y plataformas de mensajería.">
+        <meta property="og:image" content="ruta/de/imagen-compartir.jpg">
+        <meta property="og:url" content="https://www.tu-pagina.com">
+        <meta property="og:type" content="website">
+        
+        <!-- Twitter Card para compartir en Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Mi Página Futurista">
+        <meta name="twitter:description" content="Descripción breve para Twitter.">
+        <meta name="twitter:image" content="ruta/de/imagen-twitter.jpg">
+        
+        <!-- Compatibilidad con IE -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!-- Enlace a la hoja de estilos CSS -->
+        <link rel="stylesheet" href="styles.css">
+        
+        <!-- Enlace a una fuente de Google (opcional) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    Explicación de cada etiqueta
+    Charset: <meta charset="UTF-8"> — Define la codificación de caracteres como UTF-8, permitiendo el uso de caracteres especiales.
+    
+    Viewport: <meta name="viewport" content="width=device-width, initial-scale=1.0"> — Escala la página para que sea responsive en dispositivos móviles, ajustándose al ancho de la pantalla del dispositivo.
+    
+    Title: <title> — Es el título que aparece en la pestaña del navegador y en los resultados de búsqueda.
+    
+    Description: <meta name="description" content="..."> — Breve descripción para los motores de búsqueda; ayuda a que los usuarios encuentren tu página en función de su contenido.
+    
+    Keywords: <meta name="keywords" content="..."> — Lista de palabras clave para SEO (no tan utilizada hoy en día, pero puede ser útil).
+    
+    Author: <meta name="author" content="..."> — Indica el autor de la página.
+    
+    Favicon: <link rel="icon" href="..."> — Especifica el icono de la página, que se muestra en la pestaña del navegador y en los favoritos.
+    
+    Theme Color: <meta name="theme-color" content="..."> — Define el color de la barra superior en dispositivos Android, mejorando la apariencia de la página en estos dispositivos.
+    
+    Robots: <meta name="robots" content="index, follow"> — Indica a los motores de búsqueda si deben indexar la página y seguir los enlaces.
+    
+    Open Graph: Etiquetas de og como <meta property="og:title" content="..."> — Optimiza el contenido al compartir la página en redes sociales, como Facebook o WhatsApp.
+    
+    Twitter Card: <meta name="twitter:card" content="..."> — Optimiza la presentación de tu página en Twitter; puedes mostrar imágenes grandes, títulos y descripciones.
+    
+    Compatibilidad con IE: <meta http-equiv="X-UA-Compatible" content="IE=edge"> — Hace que Internet Explorer use su modo de compatibilidad más reciente.
+    
+    Preconnect para fuentes de Google: <link rel="preconnect" href="https://fonts.googleapis.com"> — Optimiza la carga de fuentes externas, mejorando el rendimiento de la página.*/

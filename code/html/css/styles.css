@@ -1,0 +1,204 @@
+/* Configuración global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+    background-color: #1b1f27;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilo para el encabezado */
+header {
+    background: linear-gradient(135deg, #3a3f51, #4b4f65);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+header nav ul li a {
+    color: #a0f0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #5af0c3;
+}
+
+/* Sección principal */
+main {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #2b2f3a;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Secciones individuales */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #a0f0e0;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #5af0c3;
+    padding-bottom: 5px;
+}
+
+/* Estilo para listas */
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ul ul {
+    list-style-type: square;
+    color: #c0e4ef;
+}
+
+li {
+    margin-bottom: 5px;
+    color: #e0e0e0;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+/* Definiciones (dl, dt, dd) */
+dl {
+    margin: 10px 0;
+}
+
+dt {
+    font-weight: bold;
+    color: #5af0c3;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    color: #c0e4ef;
+}
+
+/* Código y pre */
+pre, code {
+    background-color: #1d2630;
+    color: #5af0c3;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Courier New", monospace;
+    font-size: 0.95em;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+/* Estilo de la tabla */
+.table_component {
+    overflow: auto;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    background-color: #242a36;
+}
+
+.table_component table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #e0e0e0;
+}
+
+.table_component caption {
+    caption-side: top;
+    font-weight: bold;
+    padding: 10px;
+    color: #5af0c3;
+}
+
+.table_component th, .table_component td {
+    border: 1px solid #3c4455;
+    padding: 12px;
+    text-align: left;
+}
+
+.table_component th {
+    background-color: #323846;
+    color: #a0f0e0;
+    text-transform: uppercase;
+}
+
+.table_component td {
+    background-color: #2b2f3a;
+}
+
+/* Estilo para imágenes */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #5af0c3;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+}
+
+figure figcaption {
+    font-style: italic;
+    color: #a0f0e0;
+    margin-top: 10px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #3a3f51, #4b4f65);
+    color: #e0e0e0;
+    font-size: 0.9em;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: 0;
+}
